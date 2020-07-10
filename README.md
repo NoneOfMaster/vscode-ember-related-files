@@ -1,14 +1,14 @@
-# Ember Related Files
-
-[![](https://travis-ci.org/josa42/vscode-ember-related-files.svg?branch=master)](https://travis-ci.org/josa42/vscode-ember-related-files)
-[![](https://ci.appveyor.com/api/projects/status/github/josa42/vscode-ember-related-files?svg=true&branch=master)](https://ci.appveyor.com/project/josa42/vscode-ember-related-files)
-
-![](https://rawgithub.com/josa42/vscode-ember-related-files/master/docs/assets/screenrecording.gif)
+# Ember Related Files - Customized 
 
 ## Default keybinding
 
 - **Mac**: <kbd>`alt`</kbd> + <kbd>`cmd`</kbd> + <kbd>`r`</kbd>
 - **Win/Linux**: <kbd>`alt`</kbd> + <kbd>`ctrl`</kbd> + <kbd>`r`</kbd>
+
+## Why?
+
+This is [ember-related-files](https://github.com/josa42/vscode-ember-related-files) v1.4.0 + added support for: 
+- indexed pod components
 
 ## Configuration
 

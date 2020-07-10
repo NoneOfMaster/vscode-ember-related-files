@@ -1,17 +1,17 @@
 {
-    "name": "ember-related-files",
+    "name": "ember-related-files-customized",
     "displayName": "Ember Related Files",
-    "description": "",
-    "version": "1.4.0",
-    "publisher": "josa",
+    "description": "Extends ember-related-files 1.4.0 to include indexed pods",
+    "version": "1.0.0",
+    "publisher": "Russell",
     "license": "MIT",
-    "homepage": "https://github.com/josa42/vscode-ember-related-files",
+    "homepage": "https://github.com/NoneOfMaster/vscode-ember-related-files",
     "repository": {
         "type": "git",
-        "url": "https://github.com/josa42/vscode-ember-related-files.git"
+        "url": "https://github.com/NoneOfMaster/vscode-ember-related-files.git"
     },
     "bugs": {
-        "url": "https://github.com/josa42/vscode-ember-related-files/issues"
+        "url": "https://github.com/NoneOfMaster/vscode-ember-related-files/issues"
     },
     "engines": {
         "vscode": "^1.20.0"
@@ -76,6 +76,6 @@
         "vscode": "^1.1.36"
     },
     "dependencies": {
-        "ember-find-related-files": "0.4.0"
+        "glob": "~7.1.4"
     }
 }

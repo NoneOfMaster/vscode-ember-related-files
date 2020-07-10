@@ -6,7 +6,7 @@ const glob = require('glob')
 const { join } = require('path')
 
 const groups = [
-  ['indexed-pod-component-js', 'indexed-pod-component-template-hbs', 'indexed-pod-component-style-scss', 'pod-component-js', 'pod-component-template-hbs', 'pod-component-style-css', 'pod-component-style-sass', 'pod-component-style-scss', 'pod-component-unit-js', 'pod-component-integration-js'],
+  ['indexed-pod-component-js', 'indexed-pod-component-template-hbs', 'indexed-pod-component-style-scss', 'indexed-pod-component-style-css', 'indexed-pod-component-style-sass', 'pod-component-js', 'pod-component-template-hbs', 'pod-component-style-css', 'pod-component-style-sass', 'pod-component-style-scss', 'pod-component-unit-js', 'pod-component-integration-js'],
   ['component-js', 'component-template-hbs', 'component-style-css', 'component-style-sass', 'component-style-scss', 'component-unit-js', 'component-integration-js'],
   ['controller-js', 'controller-template-hbs', 'route-js', 'controller-unit-js', 'controller-integration-js', 'route-unit-js', 'route-integration-js'],
   ['mixin-js', 'mixin-unit-js', 'mixin-integration-js'],
@@ -104,21 +104,16 @@ function getPath (sourceType, typeKey) {
   const { hostType, part } = sourceType
   const [, , pod, type, , subtype, ext] = typeKey.match(/^((indexed-pod|pod)-)?([a-z]+)(-([a-z]+))?-([a-z]+)$/)
 
-  if (pod && pod === 'indexed-pod') {
+  if (pod) {
+    const indexed = pod === 'indexed-pod'
     switch (subtype) {
       case 'integration':
       case 'unit':
         return `tests/${subtype}/${type}s/${part}/${type}-test.${ext}`
       default:
-        return `${hostType}/components/${part}/index.${ext}`
-    }
-  } else if (pod) {
-    switch (subtype) {
-      case 'integration':
-      case 'unit':
-        return `tests/${subtype}/${type}s/${part}/${type}-test.${ext}`
-      default:
-        return `${hostType}/components/${part}/${subtype || type}.${ext}`
+        let fileName = subtype || type
+        if (indexed) fileName = 'index'
+        return `${hostType}/components/${part}/${fileName}.${ext}`
     }
   } else {
     switch (subtype) {
@@ -333,3 +328,104 @@ module.exports.findType = findType
 module.exports.getRelatedTypeKeys = getRelatedTypeKeys
 module.exports.detectType = detectType
 module.exports.getPath = getPath
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
