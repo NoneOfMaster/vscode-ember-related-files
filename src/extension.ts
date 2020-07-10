@@ -5,7 +5,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { dirname, join, basename, sep as fileSeparator } from 'path'
 
-const findRelatedFiles = require('ember-find-related-files').findRelatedFiles
+import { findRelatedFiles } from './ember-find-related-files'
 
 interface IRelatedFile {
   label: string,
